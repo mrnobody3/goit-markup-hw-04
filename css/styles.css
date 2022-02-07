@@ -342,10 +342,13 @@ p {
 }
 .address-contact {
   display: inline-block;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   text-decoration: none;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-list > .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .container.footer {
   display: flex;
@@ -397,7 +400,7 @@ p {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   padding: 6px 22px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .filter-btn:focus,
 .filter-btn:hover {
@@ -405,6 +408,9 @@ p {
   background-color: var(--hover-main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter > .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* ----------PORTFOLIO---------- */
@@ -422,14 +428,14 @@ p {
   font-size: 18px;
   line-height: 2;
   color: var(--secondary-title-color);
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
-.portfolio-content {
+.portfolio-text {
   font-size: 16px;
   color: var(--primery-color);
   line-height: 1.88;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .filter-list > .item {
@@ -437,10 +443,16 @@ p {
   /* width: calc(100% / 4); */
   margin: 15px;
   border: 1px solid #eeeeee;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .filter-list > .item:focus,
 .filter-list > .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.porfolio-img {
+  display: block;
+}
+.portfolio-content {
+  padding: 20px 24px;
 }
